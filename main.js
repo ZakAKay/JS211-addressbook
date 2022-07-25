@@ -40,7 +40,7 @@ const displayUser = () => {
     const img = document.createElement("img") 
     img.src = post.picture.thumbnail
     const text = document.createTextNode(
-      `#${index}, name: ${post.name.first} ${post.name.last} ${post.dob.age} ${post.location.city} ${post.location.country} ${post.location.state} ${post.location.street}:`
+      `#${index}, Name: ${post.name.first} ${post.name.last}, Age: ${post.dob.age}, Address: ${post.location.city} ${post.location.country} ${post.location.state} ${post.location.street.name}:`
     );
     li.appendChild(text);
     allUser.append(li);
